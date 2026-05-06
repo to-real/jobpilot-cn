@@ -1,6 +1,6 @@
 {
   "name": "jobpilot-cn",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "China-market job search pipeline forked from career-ops with Boss Zhipin scanning support",
   "scripts": {
     "doctor": "node doctor.mjs",
