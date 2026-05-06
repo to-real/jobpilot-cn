@@ -1,3 +1,18 @@
+# JobPilot CN
+
+> Independent China-market fork of [career-ops](https://github.com/santifer/career-ops), adding Boss Zhipin discovery and a lightweight in-project browser access layer. This project is not affiliated with or endorsed by the original career-ops maintainer. The original MIT copyright and license are preserved.
+
+## China-Market Additions
+
+- Boss Zhipin scanner: `npm run boss:scan`
+- Chrome login preflight for dynamic pages: `npm run web:check`
+- Chinese/English title filters for AI, product, LLM, automation, and solution roles
+- Read-only job discovery only: no auto-apply, no recruiter chat automation, no form submission
+
+See [docs/SCRIPTS.md](docs/SCRIPTS.md#bossscan) for usage.
+
+---
+
 # Career-Ops
 
 [English](README.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [한국어](README.ko-KR.md) | [日本語](README.ja.md) | [Русский](README.ru.md) | [简体中文](README.cn.md) | [繁體中文](README.zh-TW.md)

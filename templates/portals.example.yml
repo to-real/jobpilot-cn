@@ -41,6 +41,25 @@ title_filter:
     - "Voice AI"
     - "Conversational AI"
     - "Speech"
+    # -- China-market AI/product keywords --
+    - "AI产品"
+    - "AI产品经理"
+    - "产品经理"
+    - "技术产品"
+    - "大模型"
+    - "生成式AI"
+    - "智能体"
+    - "AIGC"
+    - "算法"
+    - "机器学习"
+    - "深度学习"
+    - "自然语言处理"
+    - "解决方案架构师"
+    - "售前"
+    - "交付"
+    - "自动化"
+    - "工作流"
+    - "数据产品"
     # -- German AI/ML keywords (DACH market) --
     - "KI"
     - "Künstliche Intelligenz"
@@ -73,6 +92,11 @@ title_filter:
     # [CUSTOMIZE] Add keywords for roles you want to exclude
     - "Junior"
     - "Intern"
+    - "实习"
+    - "实习生"
+    - "校招"
+    - "应届"
+    - "初级"
     - ".NET"
     - "Java "
     - "iOS"
@@ -99,6 +123,30 @@ title_filter:
     - "Lead"
     - "Head"
     - "Director"
+
+# -- Boss Zhipin --
+# Optional China-market scanner. It uses public search first and only connects
+# to your logged-in Chrome session when you explicitly run:
+#   npm run boss:scan -- --use-chrome --i-understand-login-risk
+#
+# This source is for reading and organizing job listings only. It must not
+# apply, chat with recruiters, exchange contact details, or submit forms.
+boss_zhipin:
+  enabled: false
+  access_mode: public_first
+  keywords_from_profile: true
+  keywords: []
+  cities:
+    - name: Shanghai
+      code: "101020100"
+    - name: Beijing
+      code: "101010100"
+    - name: Shenzhen
+      code: "101280600"
+    - name: Hangzhou
+      code: "101210100"
+  max_pages: 1
+  rate_limit_ms: 2500
 
 # -- Search queries --
 # Each query triggers a WebSearch. Use site: to filter by portal.

@@ -187,3 +187,38 @@ npm run scan
 ```
 
 **Exit codes:** `0` scan completed, `1` configuration error or no portals.yml found.
+
+---
+
+## boss:scan
+
+Boss Zhipin scanner for China-market job discovery. Reads `boss_zhipin` from `portals.yml`, derives keywords from `config/profile.yml` and `title_filter.positive`, and appends matching results to `data/pipeline.md` plus `data/scan-history.tsv`.
+
+Public search is the default:
+
+```bash
+npm run boss:scan -- --dry-run
+npm run boss:scan -- --query "AI Product Manager" --city Shanghai --max-pages 1
+```
+
+Logged-in Chrome mode is opt-in and read-only. It must not apply, chat, exchange contact details, or submit forms:
+
+```bash
+npm run web:check
+npm run boss:scan -- --use-chrome --i-understand-login-risk
+```
+
+**Exit codes:** `0` scan completed, `1` configuration, browser, or safety confirmation error.
+
+---
+
+## web:check
+
+Lightweight browser access preflight for Chrome login mode. Checks Node.js and Chrome DevTools availability without requiring the external Web Access skill.
+
+```bash
+npm run web:check
+npm run web:check -- --open-settings
+```
+
+If Chrome is not connected, open `chrome://inspect/#remote-debugging`, enable "Allow remote debugging for this browser instance", and retry. The `--open-settings` flag opens that Chrome settings page for you.

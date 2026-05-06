@@ -1,7 +1,7 @@
 {
-  "name": "career-ops",
+  "name": "jobpilot-cn",
   "version": "1.6.0",
-  "description": "AI-powered job search pipeline built on Claude Code",
+  "description": "China-market job search pipeline forked from career-ops with Boss Zhipin scanning support",
   "scripts": {
     "doctor": "node doctor.mjs",
     "verify": "node verify-pipeline.mjs",
@@ -15,6 +15,8 @@
     "rollback": "node update-system.mjs rollback",
     "liveness": "node check-liveness.mjs",
     "scan": "node scan.mjs",
+    "boss:scan": "node boss-scan.mjs",
+    "web:check": "node web-check.mjs",
     "gemini:eval": "node gemini-eval.mjs"
   },
   "keywords": [
@@ -22,13 +24,15 @@
     "job-search",
     "claude-code",
     "career",
-    "automation"
+    "automation",
+    "boss-zhipin",
+    "china-jobs"
   ],
   "author": "Santiago Fernández de Valderrama <hi@santifer.io> (https://santifer.io)",
-  "homepage": "https://santifer.io",
+  "homepage": "https://github.com/to-real/jobpilot-cn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/santifer/career-ops"
+    "url": "https://github.com/to-real/jobpilot-cn"
   },
   "license": "MIT",
   "dependencies": {
